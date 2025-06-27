@@ -240,6 +240,35 @@ const Login = ({ onLogin }) => {
           color: #1769aa;
           transform: scale(1.12);
         }
+        @media (max-width: 700px) {
+          .login-glass {
+            padding: 1.2rem 0.5rem;
+            max-width: 98vw;
+          }
+          .login-title {
+            font-size: 1.3rem;
+          }
+          .login-btn {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+        @media (max-width: 480px) {
+          .login-glass {
+            padding: 0.7rem 0.1rem;
+          }
+          .login-title {
+            font-size: 1.1rem;
+          }
+          .login-btn {
+            font-size: 0.9rem;
+            padding: 8px;
+          }
+        }
+        html, body, #root {
+          max-width: 100vw;
+          overflow-x: hidden;
+        }
       `}</style>
     </div>
   );

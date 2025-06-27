@@ -250,9 +250,9 @@ const Home = () => {
             height: 35px;
           }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 700px) {
           .home-header {
-            padding: 0.8rem 0.5rem;
+            padding: 0.8rem 0.3rem;
           }
           .home-title {
             font-size: 1.2rem;
@@ -260,15 +260,52 @@ const Home = () => {
           .home-subtitle {
             font-size: 0.8rem;
           }
-          .home-btn {
-            min-width: 100px;
-            padding: 0.5rem 0.8rem;
-            font-size: 0.9rem;
+          .home-btn, .home-btn-register {
+            min-width: 90px;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
           }
           .home-header-video {
             width: 40px;
-            height: 30px;
+            height: 28px;
           }
+          .creative-posts-grid {
+            grid-template-columns: 1fr;
+            gap: 18px;
+          }
+          .creative-post-card {
+            padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+            min-height: 220px;
+          }
+          .creative-post-title {
+            font-size: 1.1rem;
+          }
+          .blog-gallery-img {
+            height: 90px;
+          }
+        }
+        @media (max-width: 480px) {
+          .home-header {
+            padding: 0.5rem 0.1rem;
+          }
+          .home-title {
+            font-size: 1rem;
+          }
+          .home-btn, .home-btn-register {
+            min-width: 70px;
+            font-size: 0.85rem;
+            padding: 0.4rem 0.7rem;
+          }
+          .creative-post-card {
+            padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+          }
+          .blog-gallery-img {
+            height: 60px;
+          }
+        }
+        html, body, #root {
+          max-width: 100vw;
+          overflow-x: hidden;
         }
         /* Blog gallery styles */
         .blog-gallery-grid {

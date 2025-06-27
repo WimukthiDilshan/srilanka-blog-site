@@ -442,6 +442,26 @@ const CreatePost = ({ user }) => {
           .cp-posts-title {
             font-size: 1.2rem;
           }
+          .cp-btn, .cp-publish-btn, .cp-logout-btn {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+        @media (max-width: 480px) {
+          .cp-form-card {
+            padding: 0.7rem 0.1rem 1rem 0.1rem;
+          }
+          .cp-title {
+            font-size: 1.1rem;
+          }
+          .cp-btn, .cp-publish-btn, .cp-logout-btn {
+            font-size: 0.9rem;
+            padding: 8px;
+          }
+        }
+        html, body, #root {
+          max-width: 100vw;
+          overflow-x: hidden;
         }
       `}</style>
     </div>

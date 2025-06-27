@@ -159,8 +159,38 @@ const PostDetails = () => {
         }
         @media (max-width: 700px) {
           .blog-details-gallery-img {
-            height: 140px;
+            height: 110px;
           }
+          .post-details-card {
+            padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+            max-width: 98vw;
+          }
+          .post-details-title {
+            font-size: 1.1rem;
+          }
+          .post-details-btn {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+        @media (max-width: 480px) {
+          .blog-details-gallery-img {
+            height: 70px;
+          }
+          .post-details-card {
+            padding: 0.7rem 0.1rem 0.7rem 0.1rem;
+          }
+          .post-details-title {
+            font-size: 1rem;
+          }
+          .post-details-btn {
+            font-size: 0.9rem;
+            padding: 8px;
+          }
+        }
+        html, body, #root {
+          max-width: 100vw;
+          overflow-x: hidden;
         }
       `}</style>
     </div>

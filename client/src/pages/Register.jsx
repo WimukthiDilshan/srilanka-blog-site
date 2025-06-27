@@ -254,6 +254,35 @@ const Register = ({ onRegister }) => {
           color: #1769aa;
           transform: scale(1.12);
         }
+        @media (max-width: 700px) {
+          .register-glass {
+            padding: 1.2rem 0.5rem;
+            max-width: 98vw;
+          }
+          .register-title {
+            font-size: 1.3rem;
+          }
+          .register-btn {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+        @media (max-width: 480px) {
+          .register-glass {
+            padding: 0.7rem 0.1rem;
+          }
+          .register-title {
+            font-size: 1.1rem;
+          }
+          .register-btn {
+            font-size: 0.9rem;
+            padding: 8px;
+          }
+        }
+        html, body, #root {
+          max-width: 100vw;
+          overflow-x: hidden;
+        }
       `}</style>
     </div>
   );
